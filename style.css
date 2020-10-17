@@ -1,0 +1,406 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Helvetica', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+  color: #fff;
+}
+h1, h2 , h3, h4{
+  color: #fff;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+p{
+  margin: 0.5rem 0;
+}
+img{
+  width: 100%;
+}
+.showcase{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("bg.jpg") no-repeat center center/cover;
+}
+.showcase::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 40px 30px 100px #000,
+              inset -40px -30px 100px #000;
+}
+.showcase-top{
+  position: relative;
+  height: 92px;
+  z-index: 2;
+}
+.showcase-top img{
+  width: 170px;
+  position: absolute;
+  top: 0px;
+  left: 40px;
+}
+.showcase-top a{
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+.showcase-content{
+  z-index: 2;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 9rem;
+}
+.showcase-content h1{
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 0 0 0.8rem;
+  transform: scaleX(1.05);
+  transform: scaleY(0.95);
+}
+.p-top{
+  font-weight: 500;
+  font-size: 26px;
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.02em;
+}
+.p-bot{
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.02em;
+}
+
+
+.btn{
+  display: inline-block;
+  background: #e50914;
+  color: #fff;
+  padding: 7px 17px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+.btn-rounded{
+  border-radius: 5px;
+}
+input{
+  margin-left: -250px;
+  height: 58px;
+  padding: 5px 10px 0;
+  width: 45%;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+.get-st{
+  margin-left: 43.3%;
+  margin-top: -58px;
+}
+.get-st button{
+  padding: 0.55rem 1.2rem;
+  font-size: 25px;
+  height: 58px;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* PART TWO */
+hr{
+  height: 8px;
+  width: 100%;
+  border: none;
+  background: #222;
+}
+.kids .container{
+  padding: 70px 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+.right h1{
+  padding-top: 20px;
+  font-size: 47px;
+}
+.right p{
+  padding-top: 25px;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+.njy{
+  padding: 50px 30px 60px 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+.njy .l-content h1{
+  padding-top: 80px;
+  font-size: 47px;
+}
+.njy .l-content p{
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.r-content{
+  position: relative;
+}
+.r-content img{
+  z-index: 1;
+}
+.video{
+  position: absolute;
+  top: 70px;
+  left: 60px;
+  z-index: -1;
+}
+
+.video video{
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: 83%;
+  max-height: 64%;
+}
+
+/*  PART 3 */
+
+.stranger{
+  padding: 40px 30px 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+}
+.mobile{
+  position: relative;
+}
+.box{
+  position: absolute;
+  top: 220px;
+  left: 50px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  border: 3px solid #222;
+  border-radius: 14px;
+  width: 330px;
+  height: 95px;
+  background: #000;
+}
+.box img{
+  width: 46px;
+  height: 64px;
+}
+.box h2{
+  padding-top: 13px;
+  font-size: 16px;
+}
+.box p{
+  font-size: 14px;
+  color: #0071eb;
+}
+.box .gif{
+  width: 48px;
+  height: 60px;
+}
+.stranger-content{
+  padding-top: 60px;
+}
+.stranger-content h1{
+  font-size: 47px;
+}
+.stranger-content p{
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.sacred{
+  padding: 50px 30px 60px 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+.sacred .sacred-content h1{
+  padding-top: 80px;
+  font-size: 47px;
+}
+.sacred .sacred-content p{
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.mac{
+  position: relative;
+}
+.mac img{
+  z-index: 1;
+}
+.tv2{
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  z-index: -1;
+}
+.tv2 video{
+  display: inline-block;
+  vertical-align: baseline;
+  max-width: 76%;
+  max-height: 54%;
+}
+
+
+/* <!-- PART 4 --> */
+
+.frequent{
+  padding: 70px 180px;
+}
+.frequent h1{
+  text-align: center;
+  font-size: 47px;
+  margin-bottom: 50px;
+}
+.frequent .Questions button{
+  width: 100%;
+  text-align: left;
+  padding: 16px 44px 16px 24px;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 10px;
+  background: #303030;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+.frequent .Questions button span{
+  float: right;
+  font-size: 40px;
+  cursor: pointer;
+}
+.frequent .Questions .faq-answer{
+  width: 100%;
+  height: auto;
+  padding: 30px 40px;
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: -8px;
+  margin-bottom: 10px;
+  background: #303030;
+  color: #fff;
+  text-align: left;
+}
+.frequent .Questions .faq-answer span{
+  transform: scaleY(1.2);
+  letter-spacing: 0.06em;
+}
+
+
+
+.p-t{
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.field{
+  text-align: center;
+  margin-bottom: 70px;
+}
+input{
+  height: 58px;
+  padding: 5px 10px 0;
+  width: 45%;
+  font-size: 16px;
+  outline: none;
+  border: none;
+}
+.get-st{
+  margin-top: -58px;
+}
+.get-st button{
+  padding: 0.55rem 1.2rem;
+  font-size: 25px;
+  height: 58px;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.closed{
+  display: none;
+}
+.rotate{
+  transform: rotate(45deg);
+}
+
+
+/* <!-- PART 5 --> */
+
+.footer{
+  max-width: 85%;
+  margin: 70px auto;
+}
+.footer, .footer a{
+  color: #888;
+  letter-spacing: 0.03em;
+}
+.footer p{
+  margin-bottom: 2rem;
+}
+.footer-cols{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+}
+.footer li{
+  line-height: 1.9;
+  list-style: none;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+.last{
+  margin-top: 40px;
+}
+.last a{
+  padding: 15px 10px;
+  border: 1px solid #888;
+}
+.last p{
+  margin-top: 30px;
+  font-size: 14px;
+}
+.btn-icon{
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
